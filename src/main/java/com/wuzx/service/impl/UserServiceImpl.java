@@ -1,19 +1,17 @@
 package com.wuzx.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.wuzx.exception.ApiException;
-import com.wuzx.model.entity.LoginParam;
-import com.wuzx.model.entity.User;
-import com.wuzx.model.mapper.UserMapper;
-import com.wuzx.model.vo.UserVO;
+import com.wuzx.login.exception.ApiException;
+import com.wuzx.login.model.entity.LoginParam;
+import com.wuzx.login.model.entity.User;
+import com.wuzx.login.mapper.UserMapper;
+import com.wuzx.login.model.vo.UserVO;
 import com.wuzx.security.JwtManager;
 import com.wuzx.service.ResourceService;
 import com.wuzx.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Collection;
 
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -40,7 +38,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return userVO;
     }
 
+    @Override
+    public void doSomething() {
 
+    }
 
 
 }

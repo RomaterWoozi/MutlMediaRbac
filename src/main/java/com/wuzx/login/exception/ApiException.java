@@ -1,6 +1,6 @@
-package com.wuzx.exception;
+package com.wuzx.login.exception;
 
-import com.wuzx.enums.ResultCode;
+import com.wuzx.login.enums.ResultCode;
 
 public class ApiException extends RuntimeException{
 

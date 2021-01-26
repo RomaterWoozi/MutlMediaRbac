@@ -3,7 +3,6 @@ package com.wuzx.config;
 import com.wuzx.security.LoginInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -16,9 +15,12 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 添加登录、权限拦截器，并排除登录接口
+        System.out.println("addInterceptors");
         registry.addInterceptor(loginInterceptor()).addPathPatterns(API_PATTERN).excludePathPatterns("/API/login");
     }
 
     @Bean
-    public LoginInterceptor loginInterceptor() {return new LoginInterceptor();}
+    public LoginInterceptor loginInterceptor() {
+        System.out.println("loginInterceptor");
+        return new LoginInterceptor();}
 }

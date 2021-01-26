@@ -1,4 +1,4 @@
-package com.wuzx.model.vo;
+package com.wuzx.login.model.vo;
 
 import lombok.Data;
 

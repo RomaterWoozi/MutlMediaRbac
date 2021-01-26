@@ -1,4 +1,4 @@
-package com.wuzx.model.entity;
+package com.wuzx.login.model.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

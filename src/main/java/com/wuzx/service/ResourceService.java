@@ -1,7 +1,7 @@
 package com.wuzx.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.wuzx.model.entity.Resource;
+import com.wuzx.login.model.entity.Resource;
 
 import java.util.Set;
 

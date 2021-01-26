@@ -1,4 +1,4 @@
-package com.wuzx.enums;
+package com.wuzx.login.enums;
 
 public enum  ResultCode {
     SUCCESS(0000, "操作成功"),

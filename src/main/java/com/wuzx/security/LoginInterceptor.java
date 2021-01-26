@@ -1,7 +1,7 @@
 package com.wuzx.security;
 
-import com.wuzx.enums.ResultCode;
-import com.wuzx.exception.ApiException;
+import com.wuzx.login.enums.ResultCode;
+import com.wuzx.login.exception.ApiException;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.AsyncHandlerInterceptor;

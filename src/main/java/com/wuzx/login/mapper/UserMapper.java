@@ -1,12 +1,12 @@
-package com.wuzx.model.mapper;
+package com.wuzx.login.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.wuzx.model.entity.User;
-import com.wuzx.model.vo.UserPageVO;
+import com.wuzx.login.model.entity.User;
+import com.wuzx.login.model.vo.UserPageVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

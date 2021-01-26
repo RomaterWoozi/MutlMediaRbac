@@ -1,9 +1,9 @@
 package com.wuzx.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.wuzx.model.entity.LoginParam;
-import com.wuzx.model.entity.User;
-import com.wuzx.model.vo.UserVO;
+import com.wuzx.login.model.entity.LoginParam;
+import com.wuzx.login.model.entity.User;
+import com.wuzx.login.model.vo.UserVO;
 
 public interface UserService extends IService<User> {
 
@@ -13,4 +13,6 @@ public interface UserService extends IService<User> {
     * 登陆
     */
     UserVO login(LoginParam user);
+
+    void doSomething();
 }
